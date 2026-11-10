@@ -1,0 +1,40 @@
+# WorldTeam Configuration
+# This file shows example configuration options
+
+# Enable debug mode
+debug: false
+
+# Team settings
+teams:
+  overworld:
+    prefix: "&a[Overworld]"
+    color: GREEN
+    friendly-fire: false
+    see-invisible: true
+    
+  nether:
+    prefix: "&c[Nether]"
+    color: RED
+    friendly-fire: false
+    see-invisible: true
+    
+  end:
+    prefix: "&5[End]"
+    color: DARK_PURPLE
+    friendly-fire: false
+    see-invisible: true
+
+# World mapping
+# You can customize which worlds belong to which team
+world-mapping:
+  # Default mappings (these are used if world name doesn't match any pattern)
+  default: overworld
+  
+  # Custom world name patterns
+  patterns:
+    - "world_nether": nether
+    - "world_the_end": end
+    - "nether.*": nether
+    - ".*_nether": nether
+    - ".*the_end.*": end
+    - ".*end.*": end

@@ -1,0 +1,37 @@
+name: WorldTeam
+version: 1.0.0
+main: com.altergen.worldteam.WorldTeam
+api-version: 1.16
+authors: [altergen]
+description: Automatically assign players to scoreboard teams based on world location
+website: https://github.com/altergen
+
+depend: []
+softdepend: []
+
+commands:
+  worldteam:
+    description: WorldTeam plugin commands
+    usage: /<command> help
+    aliases: [wt]
+
+permissions:
+  worldteam.*:
+    description: All WorldTeam permissions
+    children:
+      worldteam.use: true
+      worldteam.admin: true
+      worldteam.reload: true
+      worldteam.test: true
+  worldteam.use:
+    description: Use WorldTeam features
+    default: true
+  worldteam.admin:
+    description: Admin commands for WorldTeam
+    default: op
+  worldteam.reload:
+    description: Reload WorldTeam configuration
+    default: op
+  worldteam.test:
+    description: Test WorldTeam functionality
+    default: op
