@@ -4,7 +4,7 @@ main: com.altergen.worldteam.WorldTeam
 api-version: 1.16
 authors: [altergen]
 description: Automatically assign players to scoreboard teams based on world location
-website: https://github.com/altergen
+website: https://github.com/msc1488
 
 depend: []
 softdepend: []
